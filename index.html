@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-[100vh] bg-gray-100 flex justify-center items-center gap-4 font-sans">
+    <div class="w-[400px] min-h-[400px] max-h-[500px] bg-white px-4 py-5 rounded-lg shadow-lg">
+        <h3 class="text-3xl text-center">TODO List</h3>
+        <ul id="list" class="overflow-y-scroll max-h-[330px]">
+            
+        </ul>
+
+        
+        <div class="w-[100%] mt-10 shadow-sm flex justify-center items-center space-between ">
+            <input 
+            class="active w-full py-3 px-2 focus:outline-none text-xl border-b-2 border-green-400 rounded-lg"
+            id="newItem" onchange="setItem()" 
+            type="text" name="newItem" 
+            placeholder="What next?"
+            autofocus
+            >
+           
+        </div>
+        
+    </div>
+   
+
+    <div class="w-[400px] min-h-[400px] max-h-[500px] bg-white px-4 py-5 rounded-lg shadow-lg">
+        <h3 class="text-3xl text-center">Completed Task</h3>
+        <ul id="complete" class="overflow-y-scroll max-h-[330px]">
+            
+        </ul>
+        <p class="font-semibold">Right Click on Element to move into completed Task</p>
+
+        
+        
+    </div>
+    
+
+
+
+    
+    <script src="js/utils.js"></script>
+    <script src="js/handler.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
