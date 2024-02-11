@@ -26,3 +26,7 @@ function itemHandler(e) {
    e.classList.toggle("line-through");
    e.classList.toggle("decoration-green-400");
 }
+
+
+
+
